@@ -1,0 +1,212 @@
+html {
+    font-size: 62.5%;
+    font-family: "Carlito", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+nav {
+    height: 8rem;
+    background-color: rgb(243, 111, 111);
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(240, 240, 240);
+}
+
+.messages-container {
+    padding: 5rem 5rem;
+    height: 100vh;
+}
+
+.messages-container a {
+    color: rgb(243, 111, 111);
+}
+
+.messages-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messages-container li {
+    margin-bottom: 3rem;
+    width: 40%;
+}
+
+.message {
+    border: 1px solid rgb(243, 111, 111);
+    background-color: rgb(250, 235, 235);
+    border-radius: 10px;
+    height: 15rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.message h2 {
+    font-size: 2.5rem;
+}
+
+.message p {
+    font-size: 2rem;
+    color: rgb(91, 91, 91);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message h3 {
+    font-size: 1.5rem;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+.message a {
+    font-size: 2rem;
+    width: 2rem;
+}
+
+.message a:hover {
+    color: rgb(245, 138, 138);
+}
+
+.details {
+    padding: 5rem 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.details h1 {
+    font-size: 3.5rem;
+}
+
+.message-details {
+    border: 1px solid rgb(243, 111, 111);
+    background-color: rgb(250, 235, 235);
+    border-radius: 10px;
+    height: 50%;
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 50%;
+}
+
+.message-details h2 {
+    font-size: 2.5rem;
+}
+
+.message-details h3 {
+    font-size: 2rem;
+}
+
+.message-details p {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: rgb(91, 91, 91);
+}
+
+.form-container {
+    padding: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h1 {
+    font-size: 3.5rem;
+}
+
+.form-container form {
+    margin-top: 3rem;
+}
+
+.form-container form {
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.author, .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.author {
+    height: 30%;
+}
+
+.text {
+    height: 60%;
+}
+
+label {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+input {
+    height: 30%;
+    border-style: solid;
+}
+
+textarea {
+    height: 70%;
+}
+
+input, textarea {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+input, textarea, form button {
+    border-radius: 10px;
+}
+
+form button {
+    height: 10%;
+    background-color: rgb(243, 111, 111);
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border-style: solid;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(248, 142, 142);
+}

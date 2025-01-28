@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles.css">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <%- include("navbar") %>
+
+        <div class="messages-container">
+            <ul>
+                <% messages.forEach(message => { %>
+                    <li>
+                        <div class="message">
+                            <h2><%= message.user %></h2>
+                            <h3><%= message.added %></h3>
+                            <p><%= message.text %></p>
+    
+                            <a href="/messages/<%= message.id %>">Open</a>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </body>
+</html>

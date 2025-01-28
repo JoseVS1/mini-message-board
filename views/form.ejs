@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <%- include("navbar") %>
+
+        <div class="form-container">
+            <h1>Create a new message</h1>
+
+            <form method="POST" action="/new">
+                <div class="author">
+                    <label for="user">Author:</label>
+                    <input type="text" name="user" id="user">
+                </div>
+
+                <div class="text">
+                    <label for="text">Message:</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
