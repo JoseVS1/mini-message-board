@@ -6,6 +6,7 @@ const assetsPath = path.join(__dirname, "public");
 
 const app = express();
 
+require("dotenv").config();
 app.use(express.static(assetsPath));
 app.use(express.urlencoded({extended: true}));
 app.set("views", path.join(__dirname, "views"));
